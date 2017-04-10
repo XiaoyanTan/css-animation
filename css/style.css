@@ -1,0 +1,32 @@
+/*CSS Reset*/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css');
+
+/*Basic page formatting*/
+html {
+  font-family: Avenir, Helvetica, Futura, sans-serif;
+  font-size: 24px;
+  padding: 1em;
+}
+
+/*Vertical spacing and line-height of text elements*/
+h1,h2,h3,h4,h5,h6,p,a {
+  margin: 1em 0;
+  line-height: 1.5;
+}
+
+/*Basic heading formatting*/
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+  color: pink;
+}
+
+
+/* SIMPLE TRANSFORMS */
+
+h1 {
+  transform: scale(1.25) skew(50deg);
+}
+p {
+  transform: translateX(200px);
+}
