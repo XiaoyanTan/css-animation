@@ -25,7 +25,7 @@ h1 {
 /* SIMPLE TRANSFORMS */
 
 h1 {
-  transform: scale(1.25) skew(50deg);
+  transform: scale(1.25) skew(50deg) translateX(400px);
 }
 p {
   transform: translateX(200px);
