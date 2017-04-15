@@ -81,14 +81,19 @@ h1.rotate-up span:nth-child(8) {
     animation-delay: 1.4s;
 
 }
-h1.rotate-up span:nth-child(9) {    
-    animation-delay: 1.6s;
 
-}
 
 p {
 }
+.sprite {
+    width: 500px;
+    height: 500px;
+    display: block;
+    background: transparent url(img/walker_frames.png) 0 0 no-repeat;
+    margin: 3em auto;
+        animation: Walker 1s steps(10) infinite;
 
+}
 
 /* ANIMATION */
 
@@ -100,5 +105,13 @@ p {
     to {
         transform: rotateX(0deg);
             opacity:1;
+    }
+}
+@keyframes Walker {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 0 -5000px;
     }
 }
