@@ -1,32 +1,104 @@
 /*CSS Reset*/
+
 @import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css');
 
 /*Basic page formatting*/
+
 html {
-  font-family: Avenir, Helvetica, Futura, sans-serif;
-  font-size: 24px;
-  padding: 1em;
+    font-family: Avenir, Helvetica, Futura, sans-serif;
+    font-size: 24px;
+    padding: 1em;
+
 }
+
 
 /*Vertical spacing and line-height of text elements*/
-h1,h2,h3,h4,h5,h6,p,a {
-  margin: 1em 0;
-  line-height: 1.5;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+    margin: 1em 0;
+    line-height: 1.5;
 }
+
 
 /*Basic heading formatting*/
-h1 {
-  font-size: 2em;
-  font-weight: bold;
-  color: pink;
-}
-
-
-/* SIMPLE TRANSFORMS */
 
 h1 {
-  transform: scale(1.25) skew(50deg) translateX(400px);
+    font-size: 3em;
+    font-weight: bold;
+    color: pink;
+    text-transform: uppercase;
+    letter-spacing: .4em;
 }
+div.row{
+    text-align: center;
+}
+
+/* TRANSFORMS */
+h1.rotate-up{
+        perspective: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1.rotate-up span {
+    display: inline-block;
+        animation: Flipup 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) both;
+    transform-origin: 50% 70%;
+
+}
+h1.rotate-up span:nth-child(2) {
+    animation-delay: .2s;
+    
+}
+
+h1.rotate-up span:nth-child(3) {    
+    animation-delay: .4s;
+
+}
+h1.rotate-up span:nth-child(4) {    
+    animation-delay: .6s;
+
+}
+h1.rotate-up span:nth-child(5) {    
+    animation-delay: .8s;
+
+}
+h1.rotate-up span:nth-child(6) {    
+    animation-delay: 1s;
+
+}
+h1.rotate-up span:nth-child(7) {    
+    animation-delay: 1.2s;
+
+}
+h1.rotate-up span:nth-child(8) {    
+    animation-delay: 1.4s;
+
+}
+h1.rotate-up span:nth-child(9) {    
+    animation-delay: 1.6s;
+
+}
+
 p {
-  transform: translateX(200px);
+}
+
+
+/* ANIMATION */
+
+@keyframes Flipup {
+    from {
+        transform: rotateX(90deg);
+          opacity: 0.3;
+    }
+    to {
+        transform: rotateX(0deg);
+            opacity:1;
+    }
 }
