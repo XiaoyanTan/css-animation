@@ -140,3 +140,24 @@ p {
         transform: translateX(-600px) scale(.01);
     }
 }
+
+/* SVG */
+#cake-light {
+    transform-origin: 50% 100%;
+    animation: Lightup 1s cubic-bezier(0.45, 0.03, 0.51, 0.95) both;
+}
+#cake-body, #cake-line {
+    fill: pink;
+}
+@keyframes Lightup {
+    from {
+        transform: scale(0.1);
+        opacity: 0;
+        fill: orange;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+        fill: red;
+    }
+}
